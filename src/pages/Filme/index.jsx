@@ -45,7 +45,7 @@ export default function Filme(){
         const hasFilme = filmesSalvos.some((filmeSalvo) => filmeSalvo.id === filme.id);
 
         if(hasFilme){
-            toast.error('Opa! Você já possui este filme nos Favoritos!');
+            toast.error('Opa! Você já possui este filme salvo nos Favoritos!');
             return;
         }
         //Adicionando filme
