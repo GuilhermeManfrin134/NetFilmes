@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { toast } from "react-toastify";
 
 import api from '../../services/api';
 
@@ -44,14 +45,14 @@ export default function Filme(){
         const hasFilme = filmesSalvos.some((filmeSalvo) => filmeSalvo.id === filme.id);
 
         if(hasFilme){
-            alert('Você já possui esse filme salvo');
+            toast.error('Opa! Você já possui este filme nos Favoritos!');
             return;
         }
         //Adicionando filme
         filmesSalvos.push(filme);
         //Salvando no localStorage
         localStorage.setItem('filmes', JSON.stringify(filmesSalvos));
-        alert("Filme Salvo com sucesso");
+        toast.success("Filme salvo com sucesso! :)");
     };
 
     if(loading){
