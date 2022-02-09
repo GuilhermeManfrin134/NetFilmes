@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import { MdDelete } from 'react-icons/md';
 
 import './favoritos.css';
 
@@ -40,9 +41,9 @@ export default function Favoritos(){
                             <li key={item.id}>
                                 <span>{item.nome}</span>
 
-                                <div>
+                                <div className="details">
                                     <Link to={`/filme/${item.id}`}>Ver detalhes</Link>
-                                    <button onClick={() => handleDelete(item.id)}>Excluir</button>
+                                    <button onClick={() => handleDelete(item.id)}><MdDelete size={25} color={'rgb(92, 36, 145)'}/></button>
                                 </div>
                             </li>
                         )

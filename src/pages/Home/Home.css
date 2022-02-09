@@ -6,6 +6,16 @@
     width: 100%;
 }
 
+.container .filtro{
+    margin-top: 30px;
+    width: 90%;
+    height: 50px;
+    border: 5px solid var(--siteColor);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+
 .lista-filmes{
     margin: 15px;
     display: flex;

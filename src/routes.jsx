@@ -9,9 +9,9 @@ import Erro from './pages/Erro';
 const Routex = () => {
     return(
         <BrowserRouter>
-            <Header />
+            <Header/>
             <Routes>
-                <Route exact path="/" element={<Home />}/>
+                <Route exact path="/" element={<Home/>}/>
                 <Route exact path="/filme/:id" element={<Filme />}/>
                 <Route exact path="/favoritos" element={<Favoritos />}/>
                 <Route path="*" element={<Erro />}/>
