@@ -8,6 +8,9 @@
 
 .lista-filmes{
     margin: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .lista-filmes article{
@@ -27,7 +30,7 @@
 }
 
 .lista-filmes img{
-    width: 900px;
+    width: 350px;
     max-height: 450px;
 }
 
