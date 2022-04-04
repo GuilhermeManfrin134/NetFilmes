@@ -13,7 +13,8 @@ ul{
 ul li{
     padding: 0;
     list-style: none;
-    min-width: 600px;
+    width: 600px;
+    min-width: 300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,8 +31,6 @@ span{
     font-size: 23px;
 }
 
-
-
 button{
     margin-left: 10px;
     cursor: pointer;
@@ -42,5 +41,26 @@ button{
 ul li a{
     text-decoration: none;
     color: var(--siteColor);
+}
+
+@media screen and (max-width: 650px){
+    .meus-filmes{
+        width: 95%;
+        align-items: baseline;
+    }
+    h1{
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+    ul{
+        padding: 10px;
+    }
+    ul li{
+        flex-direction: column;
+        width: 95%;
+        align-items: baseline;
+        margin-bottom: 35px;
+    }
 }
 
